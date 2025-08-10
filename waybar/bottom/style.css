@@ -1,0 +1,23 @@
+#waybar {
+    background-color: transparent;
+}
+
+#taskbar {
+    padding: 6px 20px 6px 20px;
+    background-color: rgba(69, 71, 90, 0.5);
+    border-radius: 12px;
+    border: 1px solid #585B70;
+}
+
+#taskbar button {
+    border-radius: 10px;
+    margin: 4px 2px 4px 2px;
+}
+
+#taskbar button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#taskbar button.active {
+   background-color: #F5C2E7;
+}
