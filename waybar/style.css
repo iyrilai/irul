@@ -1,0 +1,10 @@
+* {
+  font-family: "Noto Sans", sans-serif;
+}
+
+#waybar {
+  background: rgba(24, 24, 37, 0.5); /* #181825 @ 50% */
+  border: 2px solid #F5C2E7;
+  border-radius: 6px;
+  color: #F5C2E7;
+}
