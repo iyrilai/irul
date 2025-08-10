@@ -5,7 +5,7 @@ import shutil
 source_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Destination = Hyprland config folder
-dest_dir = os.path.expanduser("~/.config/hypr")
+dest_dir = os.path.expanduser("~/.config")
 
 # Ensure destination exists
 os.makedirs(dest_dir, exist_ok=True)
