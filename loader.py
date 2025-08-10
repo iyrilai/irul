@@ -1,5 +1,6 @@
 import os
 import shutil
+import subprocess
 
 # Source = folder where this script is located
 source_dir = os.path.dirname(os.path.abspath(__file__))
@@ -26,3 +27,10 @@ for item in os.listdir(source_dir):
 
 print(f"Copied everything from {source_dir} → {dest_dir}")
 
+try:
+    subprocess.run(["hyprctl", "reload"], check=True)
+    print("Hyprland config reloaded.")
+except subprocess.CalledProcessError as e:
+    print(f"Failed to reload Hyprland (command error): {e}")
+except FileNotFoundError:
+    print("'hyprctl' command not found. Is Hyprland installed and running?")
